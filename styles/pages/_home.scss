@@ -1,0 +1,33 @@
+.section-home {
+  // background-color: $color-black;
+  color: $color-white;
+  height: 100vh;
+}
+
+.col-heading {
+  width: 70%;
+}
+
+.col-right-menu {
+  width: 20%;
+  height: 100vh;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.vid-overlay {
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: transparentize($color-tertiary-dark, 0.7);
+  z-index: 1;
+}

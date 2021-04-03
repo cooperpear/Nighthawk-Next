@@ -1,65 +1,55 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+
+
+
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Nighthawk Studios</title>
+        <meta name='keywords' content='Best web developer, Full Stack Web Developer, Best Austin Web Developer' />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <section className="section-home">
+        <div className="vid-overlay">
+          <video autoplay muted loop id="video-background" className="vid-overlay">
+            <source src="img/timelapseTraffic.mp4" type="video/mp4" />
+          </video>
+          <div className="row">
+            <div className="col-heading">
+              <h1 className="heading-primary">
+                <span className="heading-primary__1">Nighthawk</span>
+                <span className="heading-primary__2">Development</span>
+                <span className="heading-primary__3">Studios</span>
+              </h1>
+            </div>
+            <div className="vertical-line"></div>
+            <div className="col col-right-menu">
+              <div className="right-menu">
+                <div className="right-menu__item right-menu__item--1">
+                  <a href="./pages/about.html">SERVICES</a>
+                </div>
+                <div className="right-menu__item right-menu__item--2">
+                  <a href="./pages/web-dev.html">SOFTWARE</a>
+                </div>
+                <div className="right-menu__item right-menu__item--3">
+                  <a href="./pages/contact.html">CLIENTS</a>
+                </div>
+                <div className="right-menu__item right-menu__item--4">
+                  <a href="./pages/software.html">ABOUT</a>
+                </div>
+                <div className="right-menu__item right-menu__item--4">
+                  <a href="./pages/software.html">CONTACT</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
+      </section>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+
+
     </div>
   )
 }

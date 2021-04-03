@@ -1,0 +1,39 @@
+/* Global variables */
+
+*,
+*::after,
+*::before {
+  
+  box-sizing: inherit;
+}
+
+html {
+  //This defines what 1rem is for the page, can be used for ADA compliance. with this setting, 1 rem = 10 pixels, because the default font set by browser is 16px. 62.5 * 16 = 10
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
